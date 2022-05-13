@@ -24,7 +24,7 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -43,7 +43,7 @@ h1, h2, h3, h4, p, ul {
   list-style: none;
 }
 
-.list .link.current {
+.list .current {
   color: var(--hover-color);
 }
 
@@ -240,7 +240,7 @@ address {
 
 .head-title {
   margin: auto;
-  width: 696px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -289,6 +289,7 @@ address {
 }
 .features.list {
   display: flex;
+  flex-wrap: wrap;
 }
 .features .item {
   flex-wrap: wrap;
@@ -299,6 +300,7 @@ address {
 }
 .projects.list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 .projects .item:not(:last-child) {
@@ -379,6 +381,7 @@ img {
 /* ДЗ-4 иконки */
 .client-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
 }
@@ -428,6 +431,7 @@ img {
 }
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
  
 }
@@ -711,7 +715,7 @@ textarea::placeholder {
 
 /* footer form */
 .footer-input {
-  width: 360px;
+  max-width: 360px;
   padding: 15px 0 15px 16px;
   line-height: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -738,6 +742,7 @@ textarea::placeholder {
 
 .form-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
 }
 .footer-field {
