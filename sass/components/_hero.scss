@@ -1,7 +1,7 @@
-.btn-hero {
+.hero__btn {
     margin-top: 30px;
 }
-.head.section {
+.hero.section {
     background-color: var(--head-bg-color);
     text-align: center;
     padding-top: 200px;
@@ -18,7 +18,7 @@
     background-size: cover;
 }
 
-.head-title {
+.hero__title {
     margin: auto;
     max-width: 696px;
     font-weight: 900;

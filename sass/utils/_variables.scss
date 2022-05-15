@@ -30,34 +30,6 @@ body {
     padding: 0 15px;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* Утилиты */
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.list .current {
-    color: var(--hover-color);
-}
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -67,8 +39,6 @@ img {
     width: 200px;
     height: 50px;
     justify-content: center;
-
-
     border: none;
     border-radius: 4px;
     background-color: var(--hover-color);
@@ -82,28 +52,19 @@ img {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-
     transition: background-color 250ms var(--cubic);
+
+        &:hover,
+        &:focus {
+            background-color: var(--hover-button-color);
+        }
 }
 
-.button:hover,
-.button:focus {
-    background-color: var(--hover-button-color);
-}
-
-.current {
-    position: relative;
-}
-
-.current::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-
-    background-color: var(--hover-color);
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
+.solutions__title,
+.our-team__title,
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: var(--primary-text-color);
 }

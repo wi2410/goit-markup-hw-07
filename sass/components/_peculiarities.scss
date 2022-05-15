@@ -1,55 +1,16 @@
-.head-projects,
-.head-team,
-.head-clients {
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    color: var(--primary-text-color);
-}
-
-.description {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-
-    margin-bottom: 10px;
-}
-
-.features-description {
-    line-height: 1.7;
-    color: var(--title-text-color);
-}
-
-.solutions {
-    padding-top: 0;
-}
-
-.features.list {
+.features {
     display: flex;
     flex-wrap: wrap;
 }
-
-.features .item {
+.features__item {
     flex-wrap: wrap;
     width: 270px;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
-.features .item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.projects.list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-.projects .item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.tumb {
+.features__tumb {
     background-color: var(--secondary-bg-color);
     margin-bottom: 30px;
     width: 270px;
@@ -59,11 +20,39 @@
     align-items: center;
 }
 
-.projects-item {
-    position: relative;
+.features__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+
+    margin-bottom: 10px;
 }
 
-.head-project {
+.features__text {
+    line-height: 1.7;
+    color: var(--title-text-color);
+}
+
+// What are we doing
+
+.solutions {
+    padding-top: 0;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.services__item {
+    position: relative;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+.services__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;

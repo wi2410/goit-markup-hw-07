@@ -1,7 +1,45 @@
-.footer-contact li:not(:last-child) {
+.footer {
+    background-color: var(--footer-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+}
+address {
+    margin-top: 20px;
+}
+.footer-address__link {
+    font-style: normal;
+    line-height: 1.7;
+    color: var(--accent-color);
+}
+.footer-contact__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+        &:hover,
+        &:focus {
+            color: var(--hover-color);
+        }
+}
+.footer-contact__item:not(:last-child) {
     margin-bottom: 9px;
 }
-.head-footer {
+
+
+.communications {
+    margin-left: 70px;
+}
+.communications__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -9,16 +47,7 @@
     text-transform: uppercase;
 }
 
-.footer-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-
-}
-.footer-social {
-    fill: var(--accent-color);
-}
-.footer-social {
+.social-media__link {
     display: flex;
     width: 44px;
     height: 44px;
@@ -26,30 +55,31 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    fill: var(--accent-color);
 
     transition: background-color 250ms var(--cubic);
+        &:hover,
+        &:focus {
+                background-color: var(--hover-color);
+                outline: none;
+            }
 }
 
-.footer-social:hover,
-.footer-social:focus {
-    background-color: var(--hover-color);
-    outline: none;
-}
-.socials-links {
-    margin-left: 70px;
-}
-.social-link {
+.social-media {
     margin-top: 20px;
     display: flex;
 }
 
-.social-item:not(:last-child) {
+.social-media__item:not(:last-child) {
     margin-right: 10px;
 }
 
 /* footer form */
+.form-subscribe {
+    margin-left: auto;
+}
 .footer-input {
-    max-width: 360px;
+    width: 360px;
     padding: 15px 0 15px 16px;
     line-height: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -57,12 +87,13 @@
     border-radius: 4px;
     background-color: var(--footer-bg-color);
     color: var(--accent-color);
-}
 
-.footer-input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+        &::placeholder {
+    
+            font-size: 16px;
+            line-height: 1.25;
+            color: rgba(255, 255, 255, 0.6);
+        }
 }
 
 .footer-label {
@@ -94,8 +125,4 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 28px;
-}
-
-.form-subscribe {
-    margin-left: auto;
 }
