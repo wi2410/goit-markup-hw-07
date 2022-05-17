@@ -75,6 +75,7 @@
     flex-direction: column;
 }
 
+
 .form-title {
     display: block;
     font-weight: 700;
@@ -166,6 +167,7 @@ textarea {
 .checkbox-label {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .checkbox:checked+.checkbox-icon {
